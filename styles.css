@@ -20,7 +20,7 @@ time, mark, audio, video {
 }
 
 body {
-    background-color: #ececec;
+    background-color: #f3f3f3;
 }
 
 /*---------------------------------- Header ----------------------------------*/
@@ -43,10 +43,11 @@ body {
 .header .text p {
     padding: 0 30px;
     font-size: 50px;
-    background: -webkit-linear-gradient(40deg, #0084ff, #36c8f5);
+    background: -webkit-linear-gradient(40deg, #00a2ff, #a936f5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Lato', sans-serif;
+    font-weight: bold;
 }
 
 /*---------------------------------- Navigation Bar ----------------------------------*/
