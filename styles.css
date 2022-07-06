@@ -22,43 +22,79 @@ time, mark, audio, video {
 body {
     background-color: #f3f3f3;
 }
-
-/*---------------------------------- Header ----------------------------------*/
-
-.header {
+.top {
     width: 100%;
     background-image: linear-gradient(to right, #000000 , #011627, #011d33);
+    height: 120px;
 }
-.header .logo{
-    overflow: hidden;
+
+/*---------------------------------- HEADER ----------------------------------*/
+
+.header {
+    width: 90%;
+    background: transparent;
+    height: 120px;
 }
-.header .text {
-    width: 550px;
-    padding: 20px 0;
-    height: 100%;
-}
-.header .button {
-    float: right;
-}
-.header .text p {
-    padding: 0 30px;
+.header p {
+    padding: 29px 30px;
     font-size: 50px;
     background: -webkit-linear-gradient(40deg, #00a2ff, #a936f5);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
+    transition: 0.05s;
+    width: 10em;
+}
+.header p:hover {
+    transform: scale(1.01);
 }
 
 /*---------------------------------- Navigation Bar ----------------------------------*/
 
 .topnav {
+    float: right;
     list-style-type: none;
-    padding: 10px 0;
     overflow: hidden;
-    background-color: #011d33;
-    width: 100%;
+    padding: 43px 30px;
 }
+.topnav .button {
+    float: right;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    padding: 5px 30px;
+    color: #ffffff;
+    background-color: #6936f5;
+    margin-left: 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(60deg, #6936f5 , #4b79f7); 
+    z-index: 1;
+    -webkit-backface-visibility: hidden;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+}
+.topnav .button:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background-image: linear-gradient(80deg, #2860fa, #6936f5);
+    transition: opacity 0.2s ease-out;
+    z-index: 2;
+    opacity: 0;
+}
+.topnav .button:hover:after {
+    opacity: 1;
+}
+.button span {
+    position: relative;
+    z-index: 3;
+}
+
 .topnav li {
     float: right;
 }
@@ -70,20 +106,20 @@ body {
     padding: 5px 1px;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
-    margin: 0 30px;
+    margin: 0 26px;
 }
 .topnav li a:hover:not(.active) {
-    color: #3ab0ff;
+    color: #885efc;
 }
 
 .topnav li a.active {
-    color: #3ab0ff;
+    color: #885efc;
 }
 
 .hover-underline-animation {
     display: inline-block;
     position: relative;
-    color: #0087ca;
+    color: #885efc;
 }
   
 .hover-underline-animation:after {
@@ -94,7 +130,7 @@ body {
     height: 3px;
     bottom: 0;
     left: 0;
-    background-color: #0087ca;
+    background-color: #885efc;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
