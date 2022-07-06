@@ -34,6 +34,7 @@ body {
     width: 90%;
     background: transparent;
     height: 120px;
+    margin: auto;
 }
 .header p {
     padding: 29px 30px;
